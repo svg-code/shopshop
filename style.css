@@ -225,7 +225,7 @@ header .shopshop {
 }
 
 .img_container img {
-  transition: all 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 
 .section .product:hover .img_container img {
@@ -381,6 +381,7 @@ header .shopshop {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   visibility: visible;
+  padding-bottom: 20px;
 }
 
 .blog_box .box_content h2 {
@@ -526,6 +527,18 @@ header .shopshop {
   text-align: center;
 }
 
+.footer .footer_bottom .detailes a:link,
+.footer .footer_bottom .detailes a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .footer_bottom .detailes a:hover,
+.footer .footer_bottom .detailes a:active {
+  color: #e71247;
+  text-decoration: underline;
+}
+
 .footer .footer_bottom .detailes span {
   margin-right: 1rem;
 }
@@ -542,6 +555,15 @@ header .shopshop {
   header .icons {
     display: none;
   }
+}
+
+@media only screen and (max-width:1120px) {
+.blog_box .box_content {
+  visibility: visible;
+  opacity: 1;
+  font-size: 100%;
+  padding-bottom: 15px;
+}
 }
 
 
@@ -697,7 +719,13 @@ header .shopshop {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width:548px){
+  .home {
+    min-height: 33vh;
+  }
+}
+
+@media only screen and (max-width: 490px) {
   html {
     font-size: 30%;
   }
@@ -758,4 +786,16 @@ header .shopshop {
   .footer_bottom p {font-size: 3rem;}
 
   .footer_bottom img{height: 60px;}
+}
+
+@media only screen and (max-width: 414px) {
+  .home {
+    min-height: 33vh;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .home {
+    min-height: 27vh;
+  }
 }
